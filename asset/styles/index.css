@@ -51,6 +51,11 @@ nav .left-nav .onglets p {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+@media screen and (max-width: 1060px) {
+  nav .left-nav .onglets p {
+    display: none;
+  }
+}
 nav .left-nav .onglets p:hover {
   color: whitesmoke;
   -webkit-transition: 0.2s;
@@ -111,4 +116,47 @@ nav .right-nav p:hover {
           transform: scale(1.05);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+footer {
+  background: #000;
+  color: #909191;
+  padding: 25px;
+}
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+footer .colonnes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  footer .colonnes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+footer .colonnes .colonne {
+  margin-bottom: 15px;
+}
+footer .colonnes .colonne p {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+footer .colonnes .colonne p:hover {
+  color: whitesmoke;
 }/*# sourceMappingURL=index.css.map */

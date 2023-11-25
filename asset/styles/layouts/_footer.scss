@@ -1,0 +1,35 @@
+footer {
+    background: #000;
+    color: #909191;
+    padding: 25px;
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    .colonnes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media screen and (max-width: 900px) {
+            display: flex;
+            align-content: space-around;
+            flex-direction: column;
+        }
+
+        .colonne {
+            margin-bottom: 15px;
+
+            p {
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}

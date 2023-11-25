@@ -28,6 +28,10 @@ nav {
                 font-size: 1.3rem;
                 transition: 0.2s;
 
+                @media screen and (max-width: 1060px) {
+                    display: none;
+                }
+
                 &:hover { 
                     color: whitesmoke;
                     transition: 0.2s; 
